@@ -20,6 +20,16 @@ or just
 Access-Control-Allow-Origin: *
 ```
 
+**ADITIONAL NOTES**
+
+You can send custom headers adding the following line/s (i.e):
+
+`xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");`
+
+Maybe you can try do some IDOR if the application uses a custom auth header (not exploitable by default):
+
+`xhttp.setRequestHeader("Authorization", "Bearer`
+
 **EXPLOIT #1**
 Simple alert popup.
 
